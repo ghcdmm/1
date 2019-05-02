@@ -1,0 +1,497 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  17/Jan/2008  14:44:05                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Li #
+#                            st\adc.map"                                       #
+#           Output file 1 =  "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ex #
+#                            e\adc.d79"                                        #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.2                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Output file 2 =  "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ex #
+#                            e\adc.sim"                                        #
+#                            Format: simple-code                               #
+#           Command line  =  "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\lib\Luminary\driverlib.r79"     #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ob #
+#                            j\Main.r79"                                       #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ob #
+#                            j\startup.r79"                                    #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ob #
+#                            j\zlg7289.r79"                                    #
+#                            -o                                                #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Ex #
+#                            e\adc.d79"                                        #
+#                            -l                                                #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Li #
+#                            st\adc.map"                                       #
+#                            -xms                                              #
+#                            "-IC:\Program Files\IAR Systems\Embedded Workbenc #
+#                            h 4.0 Kickstart\arm\LIB\"                         #
+#                            -f                                                #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\config\lnk_LM3.xcl"             #
+#                            (-carm -DROMSTART=00000000 -DROMEND=0003FFFF      #
+#                            -DRAMSTART=20000000 -DRAMEND=2000FFFF             #
+#                            -Z(CODE)INTVEC=ROMSTART-ROMEND                    #
+#                            -Z(CODE)ICODE,DIFUNCT=ROMSTART-ROMEND             #
+#                            -Z(CODE)CODE=ROMSTART-ROMEND                      #
+#                            -Z(CONST)CODE_ID=ROMSTART-ROMEND                  #
+#                            -Z(CONST)INITTAB,DATA_ID,DATA_C=ROMSTART-ROMEND   #
+#                            -Z(CONST)CHECKSUM=ROMSTART-ROMEND                 #
+#                            -Z(DATA)VTABLE=RAMSTART-RAMEND                    #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=RAMSTART-RAMEND      #
+#                            -Z(DATA)CODE_I=RAMSTART-RAMEND) -rt               #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79"            #
+#                            "-Osimple-code=F:\micromouse\MicroMouse615 cd\Dem #
+#                            o\ADC\Debug\Exe\adc.sim"                          #
+#                            -s ResetISR -e__write_buffered=__write            #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           00000659  Relocatable, from module : startup
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  StackAlign4  = USED
+  __cpu_mode   = __pcs__thumb
+  __data_model = absolute
+  __endian     = little
+  __rt_version = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RAMEND                  2000FFFF 
+           RAMSTART                20000000 
+           ROMEND                  0003FFFF 
+           ROMSTART                00000000 
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\lib\Luminary\driverlib.r79
+  LIBRARY MODULE, NAME : __lib_adc
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000000F0 - 00000107 (0x18 bytes), align: 2
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCIntStatus            000000F1        voltageDetect (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000108 - 0000010F (0x8 bytes), align: 2
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCIntClear             00000109        voltageDetect (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000110 - 0000011B (0xc bytes), align: 2
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCSequenceEnable       00000111        ADCInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000011C - 00000149 (0x2e bytes), align: 2
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCSequenceConfigure    0000011D        ADCInit (main)
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000014C - 00000183 (0x38 bytes), align: 2
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCSequenceStepConfigure
+                                   0000014D        ADCInit (main)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000184 - 000001A5 (0x22 bytes), align: 2
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCSequenceDataGet      00000185        voltageDetect (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000001A8 - 000001AF (0x8 bytes), align: 2
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCProcessorTrigger     000001A9        voltageDetect (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000001B0 - 000001C1 (0x12 bytes), align: 2
+  Segment part 23.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCHardwareOversampleConfigure
+                                   000001B1        ADCInit (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_gpio
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000001C4 - 0000020D (0x4a bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIODirModeSet          000001C5        __zlg7289SPIWrite (zlg7289)
+                                                   zlg7289Init (zlg7289)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000210 - 00000215 (0x6 bytes), align: 2
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinWrite            00000211        __zlg7289SPIWrite (zlg7289)
+                                                   zlg7289Cmd (zlg7289)
+                                                   zlg7289CmdDat (zlg7289)
+                                                   zlg7289Init (zlg7289)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_sysctl
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_C
+  Relative segment, address: 00000848 - 00000853 (0xc bytes), align: 2
+  Segment part 4.             Intra module refs:   Segment part 16
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulRCGCRegs           00000848 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: 00000854 - 00000893 (0x40 bytes), align: 2
+  Segment part 7.             Intra module refs:   SysCtlClockGet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulXtals              00000854 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000218 - 00000243 (0x2c bytes), align: 2
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlPeripheralEnable
+                                   00000219        ADCInit (main)
+                                                   zlg7289Init (zlg7289)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000244 - 00000247 (0x4 bytes), align: 2
+  Segment part 16.            Intra module refs:   SysCtlPeripheralEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000248 - 0000024F (0x8 bytes), align: 2
+  Segment part 42.            Intra module refs:   SysCtlClockSet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysCtlDelay             00000249 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000250 - 000003A3 (0x154 bytes), align: 2
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockSet          00000251        main (main)
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003A4 - 000003A7 (0x4 bytes), align: 2
+  Segment part 44.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003A8 - 000003AB (0x4 bytes), align: 2
+  Segment part 45.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003AC - 000003AF (0x4 bytes), align: 2
+  Segment part 46.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003B0 - 00000507 (0x158 bytes), align: 2
+  Segment part 47.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockGet          000003B1        __delayNuS (zlg7289)
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000508 - 0000050B (0x4 bytes), align: 2
+  Segment part 48.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000050C - 0000050F (0x4 bytes), align: 2
+  Segment part 49.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000510 - 0000054B (0x3c bytes), align: 2
+  Segment part 52.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlADCSpeedSet       00000511        ADCInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000054C - 0000054F (0x4 bytes), align: 2
+  Segment part 54.            Intra module refs:   SysCtlADCSpeedSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000550 - 00000553 (0x4 bytes), align: 2
+  Segment part 58.            Intra module refs:   SysCtlClockGet
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Obj\Main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000554 - 0000055D (0xa bytes), align: 2
+  Segment part 2.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delay                   00000555 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000560 - 000005F3 (0x94 bytes), align: 2
+  Segment part 3.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           voltageDetect           00000561 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000005F4 - 0000062F (0x3c bytes), align: 2
+  Segment part 4.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCInit                 000005F5 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000630 - 00000633 (0x4 bytes), align: 2
+  Segment part 5.             Intra module refs:   ADCInit
+                                                   voltageDetect
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000634 - 00000657 (0x24 bytes), align: 2
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000635        ResetISR (startup)
+               stack 1 = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Obj\startup.r79
+  PROGRAM MODULE, NAME : startup
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_Z
+  Relative segment, address: 20000000 - 200000FF (0x100 bytes), align: 2
+  Segment part 2.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           pulStack                20000000 
+    -------------------------------------------------------------------------
+INTVEC
+  Relative segment, address: 00000000 - 000000EF (0xf0 bytes), align: 2
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           g_pfnVectors            00000000 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000658 - 00000697 (0x40 bytes), align: 2
+  Segment part 4.             Intra module refs:   g_pfnVectors
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ResetISR                00000659        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000698 - 00000699 (0x2 bytes), align: 2
+  Segment part 5.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           NmiSR                   00000699 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000069C - 0000069D (0x2 bytes), align: 2
+  Segment part 6.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           FaultISR                0000069D 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006A0 - 000006A1 (0x2 bytes), align: 2
+  Segment part 7.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IntDefaultHandler       000006A1 
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: 0000083C - 00000847 (0xc bytes), align: 2
+  Segment part 9. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_Z        0000083C 
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\ADC\Debug\Obj\zlg7289.r79
+  PROGRAM MODULE, NAME : zlg7289
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000006A4 - 000006BF (0x1c bytes), align: 2
+  Segment part 3.             Intra module refs:   __zlg7289SPIWrite
+                                                   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __delayNuS              000006A5 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006C0 - 00000729 (0x6a bytes), align: 2
+  Segment part 4.             Intra module refs:   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __zlg7289SPIWrite       000006C1 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000072C - 0000075B (0x30 bytes), align: 2
+  Segment part 6.             Intra module refs:   zlg7289Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Cmd              0000072D 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000075C - 0000079D (0x42 bytes), align: 2
+  Segment part 7.             Intra module refs:   zlg7289Download
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289CmdDat           0000075D 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000007A0 - 000007E7 (0x48 bytes), align: 2
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Download         000007A1        voltageDetect (main)
+               stack 1 = 00000000 ( 00000018 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000007E8 - 0000082F (0x48 bytes), align: 2
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Init             000007E9        main (main)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: 00000894 - 00000896 (0x3 bytes), align: 0
+  Segment part 2.             Intra module refs:   zlg7289Download
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79
+  LIBRARY MODULE, NAME : ?div_module
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000830 - 0000083B (0xc bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ??divu32_t              00000831        voltageDetect (main)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC                             00000000 - 000000EF          F0   rel    2
+CODE                               000000F0 - 0000083B         74C   rel    2
+INITTAB                            0000083C - 00000847           C   rel    2
+DATA_ID                                 00000848                     dse    0
+DATA_C                             00000848 - 00000896          4F   rel    2
+DATA_I                                  20000000                     dse    0
+DATA_Z                             20000000 - 200000FF         100   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 2 108 bytes of CODE  memory
+   256 bytes of DATA  memory
+    91 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

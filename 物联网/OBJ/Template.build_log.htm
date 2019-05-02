@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: HC G, TJPU, LIC=PE7Z9-4TUQ5-U4WS7-ERLK0-L72GR-SZRXF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      CMSIS_AGDI.dll V1.27.5.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+C:\Users\IDE\Desktop\Material & Tools\ÎïÁªÍø\main\Iot.uvprojx
+Project File Date:  02/24/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Template'
+compiling core_cm3.c...
+assembling startup_stm32f10x_md.s...
+compiling misc.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_usart.c...
+compiling delay.c...
+compiling main.c...
+compiling system_stm32f10x.c...
+compiling MOTER.C...
+MOTER.C(63): warning:  #181-D: argument is incompatible with corresponding format string conversion
+        printf("r:%d    %d\r\n",m[0].enco,m[1]);
+MOTER.C(74): warning:  #175-D: subscript out of range
+        m[2].v=-(vy-vx-w*(a+b));
+MOTER.C(75): warning:  #175-D: subscript out of range
+        m[3].v=-(vy+vx+w*(a+b));
+MOTER.C(213): error:  #20: identifier "TIM6_IRQn" is undefined
+        NVIC_InitStructure.NVIC_IRQChannel =TIM6_IRQn;
+MOTER.C: 3 warnings, 1 error
+compiling tim.c...
+compiling usart.c...
+"..\OBJ\Template.axf" - 1 Error(s), 3 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Template
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:16
+</pre>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AutoBVT, Microsoft, LIC=W96CX-HTD3L-XCNJ0-BLAN7-MS34B-T1YE1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  D:\Program Files\keill\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.18.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\机器人\PID控制\USER\Minibalance.uvprojx
+Project File Date:  06/17/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Program Files\keill\ARM\ARMCC\Bin'
+Build target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling Minibalance.c...
+compiling delay.c...
+compiling sys.c...
+compiling LED.C...
+compiling usart.c...
+compiling key.c...
+compiling adc.c...
+compiling oled.c...
+compiling timer.c...
+compiling encoder.c...
+compiling motor.c...
+compiling IOI2C.c...
+compiling spi.c...
+compiling 24l01.c...
+compiling usart2.c...
+..\HARDWARE\USART2\usart2.c(11): warning:  #550-D: variable "kp3" was set but never used
+                                                                                                                                          static int kp3=0,ki3=0,kd3=0;
+..\HARDWARE\USART2\usart2.c(11): warning:  #550-D: variable "ki3" was set but never used
+                                                                                                                                          static int kp3=0,ki3=0,kd3=0;
+..\HARDWARE\USART2\usart2.c(11): warning:  #550-D: variable "kd3" was set but never used
+                                                                                                                                          static int kp3=0,ki3=0,kd3=0;
+..\HARDWARE\USART2\usart2.c: 3 warnings, 0 errors
+compiling DataScope_DP.C...
+compiling control.c...
+compiling filter.c...
+compiling inv_mpu_dmp_motion_driver.c...
+compiling inv_mpu.c...
+compiling MPU6050.c...
+compiling show.c...
+linking...
+Program Size: Code=31958 RO-data=6394 RW-data=520 ZI-data=2840  
+FromELF: creating hex file...
+"..\OBJ\Minibalance.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\机器人\PID控制\USER\RTE
+  D:\Program Files\keill\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Program Files\keill\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>

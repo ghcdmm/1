@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>1688579429</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\src\Mouse_Drive.c</file>
+            <file>$PROJ_DIR$\src\startup.c</file>
+            <file>$PROJ_DIR$\src\zlg7289.c</file>
+            <file>$PROJ_DIR$\src\Mouse_Drive.h</file>
+            <file>$PROJ_DIR$\src\Zlg7289.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\maze.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\zlg7289.pbi</file>
+            <file>$PROJ_DIR$\Debug\Exe\Maze.out</file>
+            <file>$PROJ_DIR$\src\Type.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Mouse_Drive.o</file>
+            <file>$PROJ_DIR$\src\maze.h</file>
+            <file>$PROJ_DIR$\src\maze.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Mouse_Drive.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\maze.o</file>
+            <file>$PROJ_DIR$\src\Mouse_Config.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Maze.pbd</file>
+            <file>$PROJ_DIR$\src\Micromouse.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\zlg7289.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup.o</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\src\Mouse_Drive.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 9 15 3 4 17</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\startup.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\zlg7289.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4 9</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\src\maze.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 14</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 11 4</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 17 9 4 11 15</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+    </configuration>
+</project>

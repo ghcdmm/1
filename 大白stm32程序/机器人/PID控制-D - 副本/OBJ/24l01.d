@@ -1,0 +1,2 @@
+..\obj\24l01.o: ..\HARDWARE\NRF24L01\24l01.c
+..\obj\24l01.o: ..\HARDWARE\NRF24L01\24l01.h

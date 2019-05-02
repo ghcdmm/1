@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: AutoBVT, Microsoft, LIC=W96CX-HTD3L-XCNJ0-BLAN7-MS34B-T1YE1
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.18
+Toolchain Path:  D:\Program Files\keill\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\机器人\robot(1)\MDK-ARM\robot.uvprojx
+Project File Date:  06/16/2018
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Program Files\keill\ARM\ARMCC\Bin'
+Rebuild target 'robot'
+assembling startup_stm32f103xb.s...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_tim.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling main.c...
+../Src/../modules/datalink/datalink.h(4): warning:  #1295-D: Deprecated declaration initlialze_datalink - give arg types
+  void initlialze_datalink();
+../Src/../modules/datalink/datalink.h(5): warning:  #1295-D: Deprecated declaration datalink_main - give arg types
+  void datalink_main();
+../Src/../modules/datalink/datalink.h(6): warning:  #1-D: last line of file ends without a newline
+  void datalink_msg_string_enocde(uint16_t len);
+../Src/../modules/encoder/encoder.h(5): warning:  #1295-D: Deprecated declaration encoder_main - give arg types
+  void encoder_main();
+../Src/main.c(76): warning:  #1295-D: Deprecated declaration setup - give arg types
+  void setup();
+../Src/main.c: 5 warnings, 0 errors
+compiling usart.c...
+compiling stm32f1xx_it.c...
+../Src/../modules/datalink/datalink.h(4): warning:  #1295-D: Deprecated declaration initlialze_datalink - give arg types
+  void initlialze_datalink();
+../Src/../modules/datalink/datalink.h(5): warning:  #1295-D: Deprecated declaration datalink_main - give arg types
+  void datalink_main();
+../Src/../modules/datalink/datalink.h(6): warning:  #1-D: last line of file ends without a newline
+  void datalink_msg_string_enocde(uint16_t len);
+../Src/stm32f1xx_it.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal_msp.c...
+compiling gpio.c...
+compiling tim.c...
+compiling dma.c...
+compiling scheduler.c...
+..\modules\scheduler\scheduler.c(45): warning:  #223-D: function "get_micros" declared implicitly
+  	uint32_t run_started_usec = get_micros();
+..\modules\scheduler\scheduler.c: 1 warning, 0 errors
+compiling datalink.c...
+../Inc/../modules/datalink/datalink.h(4): warning:  #1295-D: Deprecated declaration initlialze_datalink - give arg types
+  void initlialze_datalink();
+../Inc/../modules/datalink/datalink.h(5): warning:  #1295-D: Deprecated declaration datalink_main - give arg types
+  void datalink_main();
+../Inc/../modules/datalink/datalink.h(6): warning:  #1-D: last line of file ends without a newline
+  void datalink_msg_string_enocde(uint16_t len);
+../Inc/../modules/encoder/encoder.h(5): warning:  #1295-D: Deprecated declaration encoder_main - give arg types
+  void encoder_main();
+..\modules\datalink\datalink.c: 4 warnings, 0 errors
+compiling control_velocity.c...
+../Inc/../modules/encoder/encoder.h(5): warning:  #1295-D: Deprecated declaration encoder_main - give arg types
+  void encoder_main();
+..\modules\control_velocity\control_velocity.c: 1 warning, 0 errors
+compiling encoder.c...
+../Inc/../modules/encoder/encoder.h(5): warning:  #1295-D: Deprecated declaration encoder_main - give arg types
+  void encoder_main();
+..\modules\encoder\encoder.c: 1 warning, 0 errors
+linking...
+Program Size: Code=9296 RO-data=348 RW-data=148 ZI-data=2132  
+FromELF: creating hex file...
+"robot\robot.axf" - 0 Error(s), 15 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\机器人\robot(1)\MDK-ARM\RTE
+  D:\Program Files\keill\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Program Files\keill\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:54
+</pre>
+</body>
+</html>

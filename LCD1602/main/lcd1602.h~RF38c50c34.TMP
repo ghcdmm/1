@@ -1,0 +1,6 @@
+#ifndef __LCD1602_H
+#define __LCD1602_H
+
+extern rs1602 RS1602;
+
+#endif

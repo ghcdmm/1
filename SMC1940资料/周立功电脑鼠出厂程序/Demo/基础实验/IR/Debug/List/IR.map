@@ -1,0 +1,548 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  23/Oct/2009  15:21:02                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Lis #
+#                            t\IR.map                                          #
+#           Output file 1 =  E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Exe #
+#                            \IR.d79                                           #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.2                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Output file 2 =  E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Exe #
+#                            \IR.sim                                           #
+#                            Format: simple-code                               #
+#           Command line  =  "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\lib\Luminary\driverlib.r79"     #
+#                            E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj #
+#                            \main.r79                                         #
+#                            E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj #
+#                            \startup.r79                                      #
+#                            E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj #
+#                            \zlg7289.r79                                      #
+#                            -o                                                #
+#                            E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Exe #
+#                            \IR.d79                                           #
+#                            -l                                                #
+#                            E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Lis #
+#                            t\IR.map                                          #
+#                            -xms                                              #
+#                            "-IC:\Program Files\IAR Systems\Embedded Workbenc #
+#                            h 4.0 Kickstart\arm\LIB\"                         #
+#                            -f                                                #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\config\lnk_LM3.xcl"             #
+#                            (-carm -DROMSTART=00000000 -DROMEND=0003FFFF      #
+#                            -DRAMSTART=20000000 -DRAMEND=2000FFFF             #
+#                            -Z(CODE)INTVEC=ROMSTART-ROMEND                    #
+#                            -Z(CODE)ICODE,DIFUNCT=ROMSTART-ROMEND             #
+#                            -Z(CODE)CODE=ROMSTART-ROMEND                      #
+#                            -Z(CONST)CODE_ID=ROMSTART-ROMEND                  #
+#                            -Z(CONST)INITTAB,DATA_ID,DATA_C=ROMSTART-ROMEND   #
+#                            -Z(CONST)CHECKSUM=ROMSTART-ROMEND                 #
+#                            -Z(DATA)VTABLE=RAMSTART-RAMEND                    #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=RAMSTART-RAMEND      #
+#                            -Z(DATA)CODE_I=RAMSTART-RAMEND) -rt               #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79"            #
+#                            -Osimple-code=E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ— #
+#                            È\IR\Debug\Exe\IR.sim                             #
+#                            -s ResetISR                                       #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           00000885  Relocatable, from module : startup
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  StackAlign4  = USED
+  __cpu_mode   = __pcs__thumb
+  __data_model = absolute
+  __endian     = little
+  __rt_version = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RAMEND                  2000FFFF 
+           RAMSTART                20000000 
+           ROMEND                  0003FFFF 
+           ROMSTART                00000000 
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\lib\Luminary\driverlib.r79
+  LIBRARY MODULE, NAME : __lib_gpio
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000000F0 - 00000139 (0x4a bytes), align: 2
+  Segment part 3.             Intra module refs:   GPIOPinTypePWM
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIODirModeSet          000000F1        __zlg7289SPIWrite (zlg7289)
+                                                   sensorInit (main)
+                                                   zlg7289Init (zlg7289)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000013C - 0000024F (0x114 bytes), align: 2
+  Segment part 7.             Intra module refs:   GPIOPinTypePWM
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPadConfigSet        0000013D 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000250 - 00000255 (0x6 bytes), align: 2
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinRead             00000251        SysTick_ISR (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000258 - 0000025D (0x6 bytes), align: 2
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinWrite            00000259        __zlg7289SPIWrite (zlg7289)
+                                                   zlg7289Cmd (zlg7289)
+                                                   zlg7289CmdDat (zlg7289)
+                                                   zlg7289Init (zlg7289)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000260 - 0000027D (0x1e bytes), align: 2
+  Segment part 23.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinTypePWM          00000261        sensorInit (main)
+               stack 1 = 00000000 ( 0000000C )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_pwm
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000280 - 000002AB (0x2c bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenConfigure         00000281        sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002AC - 000002C1 (0x16 bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenPeriodSet         000002AD        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002C4 - 000002CD (0xa bytes), align: 2
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenEnable            000002C5        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002D0 - 000002D9 (0xa bytes), align: 2
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenDisable           000002D1        SysTick_ISR (main)
+                                                   sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002DC - 000002F9 (0x1e bytes), align: 2
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMPulseWidthSet        000002DD        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002FC - 0000030F (0x14 bytes), align: 2
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMOutputState          000002FD        sensorInit (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_sysctl
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_C
+  Relative segment, address: 00000A2C - 00000A37 (0xc bytes), align: 2
+  Segment part 4.             Intra module refs:   Segment part 16
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulRCGCRegs           00000A2C 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: 00000A38 - 00000A77 (0x40 bytes), align: 2
+  Segment part 7.             Intra module refs:   SysCtlClockGet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulXtals              00000A38 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000310 - 0000033B (0x2c bytes), align: 2
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlPeripheralEnable
+                                   00000311        sensorInit (main)
+                                                   zlg7289Init (zlg7289)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000033C - 0000033F (0x4 bytes), align: 2
+  Segment part 16.            Intra module refs:   SysCtlPeripheralEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000340 - 00000347 (0x8 bytes), align: 2
+  Segment part 42.            Intra module refs:   SysCtlClockSet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysCtlDelay             00000341 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000348 - 0000049B (0x154 bytes), align: 2
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockSet          00000349        main (main)
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000049C - 0000049F (0x4 bytes), align: 2
+  Segment part 44.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000004A0 - 000004A3 (0x4 bytes), align: 2
+  Segment part 45.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000004A4 - 000004A7 (0x4 bytes), align: 2
+  Segment part 46.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000004A8 - 000005FF (0x158 bytes), align: 2
+  Segment part 47.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockGet          000004A9        __delayNuS (zlg7289)
+                                                   irSendFreq (main)
+                                                   sysTickInit (main)
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000600 - 00000603 (0x4 bytes), align: 2
+  Segment part 48.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000604 - 00000607 (0x4 bytes), align: 2
+  Segment part 49.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000608 - 00000619 (0x12 bytes), align: 2
+  Segment part 50.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlPWMClockSet       00000609        sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000061C - 0000061F (0x4 bytes), align: 2
+  Segment part 58.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlPWMClockSet
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_systick
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000620 - 0000062D (0xe bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickEnable           00000621        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000630 - 0000063D (0xe bytes), align: 2
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickIntEnable        00000631        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000640 - 00000643 (0x4 bytes), align: 2
+  Segment part 8.             Intra module refs:   SysTickEnable
+                                                   SysTickIntEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000644 - 0000064B (0x8 bytes), align: 2
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickPeriodSet        00000645        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000064C - 0000064F (0x4 bytes), align: 2
+  Segment part 11.            Intra module refs:   SysTickPeriodSet
+
+    *************************************************************************
+
+  FILE NAME : E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000650 - 000006A7 (0x58 bytes), align: 2
+  Segment part 3.             Intra module refs:   SysTick_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           irSendFreq              00000651 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006A8 - 000007C7 (0x120 bytes), align: 2
+  Segment part 4.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTick_ISR             000006A9        g_pfnVectors (startup)
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 20000100 - 20000100 (0x1 bytes), align: 0
+  Segment part 2.             Intra module refs:   SysTick_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysTick_ISR::ucState    20000100 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000007C8 - 00000843 (0x7c bytes), align: 2
+  Segment part 5.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sensorInit              000007C9 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000844 - 00000847 (0x4 bytes), align: 2
+  Segment part 6.             Intra module refs:   SysTick_ISR
+                                                   sensorInit
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000848 - 0000084B (0x4 bytes), align: 2
+  Segment part 7.             Intra module refs:   SysTick_ISR
+                                                   irSendFreq
+                                                   sensorInit
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000084C - 00000867 (0x1c bytes), align: 2
+  Segment part 8.             Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sysTickInit             0000084D 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000868 - 00000883 (0x1c bytes), align: 2
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000869        ResetISR (startup)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: 00000A20 - 00000A2B (0xc bytes), align: 2
+  Segment part 29. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_Z        00000A20 
+
+    *************************************************************************
+
+  FILE NAME : E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj\startup.r79
+  PROGRAM MODULE, NAME : startup
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_Z
+  Relative segment, address: 20000000 - 200000FF (0x100 bytes), align: 2
+  Segment part 2.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           pulStack                20000000 
+    -------------------------------------------------------------------------
+INTVEC
+  Relative segment, address: 00000000 - 000000EF (0xf0 bytes), align: 2
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           g_pfnVectors            00000000 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000884 - 000008C3 (0x40 bytes), align: 2
+  Segment part 4.             Intra module refs:   g_pfnVectors
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ResetISR                00000885        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008C4 - 000008C5 (0x2 bytes), align: 2
+  Segment part 5.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           NmiSR                   000008C5 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008C8 - 000008C9 (0x2 bytes), align: 2
+  Segment part 6.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           FaultISR                000008C9 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008CC - 000008CD (0x2 bytes), align: 2
+  Segment part 7.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IntDefaultHandler       000008CD 
+
+    *************************************************************************
+
+  FILE NAME : E:\µÁƒ‘ Û◊ ¡œ\π‚≈Ãƒ⁄»›\Demo\ª˘¥° µ—È\IR\Debug\Obj\zlg7289.r79
+  PROGRAM MODULE, NAME : zlg7289
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000008D0 - 000008EB (0x1c bytes), align: 2
+  Segment part 3.             Intra module refs:   __zlg7289SPIWrite
+                                                   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __delayNuS              000008D1 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008EC - 00000955 (0x6a bytes), align: 2
+  Segment part 4.             Intra module refs:   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __zlg7289SPIWrite       000008ED 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000958 - 00000987 (0x30 bytes), align: 2
+  Segment part 6.             Intra module refs:   zlg7289Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Cmd              00000959 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000988 - 000009C9 (0x42 bytes), align: 2
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289CmdDat           00000989        SysTick_ISR (main)
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000009CC - 00000A13 (0x48 bytes), align: 2
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Init             000009CD        main (main)
+               stack 1 = 00000000 ( 00000004 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79
+  LIBRARY MODULE, NAME : ?div_module
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000A14 - 00000A1F (0xc bytes), align: 2
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ??div32_t               00000A15        SysTick_ISR (main)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC                             00000000 - 000000EF          F0   rel    2
+CODE                               000000F0 - 00000A1F         930   rel    2
+INITTAB                            00000A20 - 00000A2B           C   rel    2
+DATA_ID                                 00000A2C                     dse    0
+DATA_C                             00000A2C - 00000A77          4C   rel    2
+DATA_I                                  20000000                     dse    0
+DATA_Z                             20000000 - 20000100         101   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 2 592 bytes of CODE  memory
+   257 bytes of DATA  memory
+    88 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

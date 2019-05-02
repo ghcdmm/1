@@ -1,0 +1,13 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\bin\armlmiftdi.dll" 
+
+"C:\Users\IDE\Desktop\Material & Tools\SMC1940资料\周立功电脑鼠出厂程序\Demo\Maze\Debug\Exe\Maze.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.1\arm\config\debugger\TexasInstruments\LM3S.dmac" 
+
+
+
+

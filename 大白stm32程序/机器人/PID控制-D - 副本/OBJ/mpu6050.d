@@ -1,0 +1,2 @@
+..\obj\mpu6050.o: ..\BALANCE\MPU6050\MPU6050.c
+..\obj\mpu6050.o: ..\BALANCE\MPU6050\MPU6050.h

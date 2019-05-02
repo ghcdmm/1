@@ -1,0 +1,1157 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V4.60I/386                                         #
+#                                                                              #
+#           Link time     =  14/Feb/2008  12:52:18                             #
+#           Target CPU    =  ARM                                               #
+#           List file     =  "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\List\searchmaze.map"                #
+#           Output file 1 =  "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Exe\searchmaze.d79"                 #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.2                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Output file 2 =  "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Exe\searchmaze.sim"                 #
+#                            Format: simple-code                               #
+#           Command line  =  "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\lib\Luminary\driverlib.r79"     #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Obj\main.r79"                       #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Obj\startup.r79"                    #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Obj\zlg7289.r79"                    #
+#                            -o                                                #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\Exe\searchmaze.d79"                 #
+#                            -l                                                #
+#                            "F:\micromouse\MicroMouse615 cd\Demo\高级实验\Sea #
+#                            rchMaze\Debug\List\searchmaze.map"                #
+#                            -xms                                              #
+#                            "-IC:\Program Files\IAR Systems\Embedded Workbenc #
+#                            h 4.0 Kickstart\arm\LIB\"                         #
+#                            -f                                                #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\config\lnk_LM3.xcl"             #
+#                            (-carm -DROMSTART=00000000 -DROMEND=0003FFFF      #
+#                            -DRAMSTART=20000000 -DRAMEND=2000FFFF             #
+#                            -Z(CODE)INTVEC=ROMSTART-ROMEND                    #
+#                            -Z(CODE)ICODE,DIFUNCT=ROMSTART-ROMEND             #
+#                            -Z(CODE)CODE=ROMSTART-ROMEND                      #
+#                            -Z(CONST)CODE_ID=ROMSTART-ROMEND                  #
+#                            -Z(CONST)INITTAB,DATA_ID,DATA_C=ROMSTART-ROMEND   #
+#                            -Z(CONST)CHECKSUM=ROMSTART-ROMEND                 #
+#                            -Z(DATA)VTABLE=RAMSTART-RAMEND                    #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=RAMSTART-RAMEND      #
+#                            -Z(DATA)CODE_I=RAMSTART-RAMEND) -rt               #
+#                            "C:\Program Files\IAR Systems\Embedded Workbench  #
+#                            4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79"            #
+#                            "-Osimple-code=F:\micromouse\MicroMouse615 cd\Dem #
+#                            o\高级实验\SearchMaze\Debug\Exe\searchmaze.sim"   #
+#                            -s ResetISR -e__write_buffered=__write            #
+#                                                                              #
+#                        Copyright 1987-2007 IAR Systems. All rights reserved. #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at :           000013ED  Relocatable, from module : startup
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  StackAlign4  = USED
+  __cpu_mode   = __pcs__thumb
+  __data_model = absolute
+  __endian     = little
+  __rt_version = 6
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RAMEND                  2000FFFF 
+           RAMSTART                20000000 
+           ROMEND                  0003FFFF 
+           ROMSTART                00000000 
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\lib\Luminary\driverlib.r79
+  LIBRARY MODULE, NAME : __lib_gpio
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000000F0 - 00000139 (0x4a bytes), align: 2
+  Segment part 3.             Intra module refs:   GPIOPinTypePWM
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIODirModeSet          000000F1        __zlg7289SPIWrite (zlg7289)
+                                                   keyInit (main)
+                                                   sensorInit (main)
+                                                   stepMotorIint (main)
+                                                   zlg7289Init (zlg7289)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000013C - 0000024F (0x114 bytes), align: 2
+  Segment part 7.             Intra module refs:   GPIOPinTypePWM
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPadConfigSet        0000013D 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000250 - 00000255 (0x6 bytes), align: 2
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinRead             00000251        irCheck (main)
+                                                   keyCheck (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000258 - 0000025D (0x6 bytes), align: 2
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinWrite            00000259        SysTick_ISR (main)
+                                                   __zlg7289SPIWrite (zlg7289)
+                                                   leftMotorContr (main)
+                                                   rightMotorContr (main)
+                                                   stepMotorIint (main)
+                                                   zlg7289Cmd (zlg7289)
+                                                   zlg7289CmdDat (zlg7289)
+                                                   zlg7289Init (zlg7289)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000260 - 0000027D (0x1e bytes), align: 2
+  Segment part 23.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           GPIOPinTypePWM          00000261        sensorInit (main)
+               stack 1 = 00000000 ( 0000000C )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_interrupt
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00000280 - 000002F3 (0x74 bytes), align: 2
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IntEnable               00000281        stepMotorIint (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002F4 - 000002F7 (0x4 bytes), align: 2
+  Segment part 20.            Intra module refs:   IntEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000002F8 - 000002FB (0x4 bytes), align: 2
+  Segment part 21.            Intra module refs:   IntEnable
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_pwm
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000002FC - 00000327 (0x2c bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenConfigure         000002FD        sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000328 - 0000033D (0x16 bytes), align: 2
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenPeriodSet         00000329        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000340 - 00000349 (0xa bytes), align: 2
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenEnable            00000341        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000034C - 00000355 (0xa bytes), align: 2
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMGenDisable           0000034D        irCheck (main)
+                                                   sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000358 - 00000375 (0x1e bytes), align: 2
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMPulseWidthSet        00000359        irSendFreq (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000378 - 0000038B (0x14 bytes), align: 2
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PWMOutputState          00000379        sensorInit (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_sysctl
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_C
+  Relative segment, address: 000015EC - 000015F7 (0xc bytes), align: 2
+  Segment part 4.             Intra module refs:   Segment part 16
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulRCGCRegs           000015EC 
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: 000015F8 - 00001637 (0x40 bytes), align: 2
+  Segment part 7.             Intra module refs:   SysCtlClockGet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           g_pulXtals              000015F8 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000038C - 000003B7 (0x2c bytes), align: 2
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlPeripheralEnable
+                                   0000038D        main (main)
+                                                   sensorInit (main)
+                                                   stepMotorIint (main)
+                                                   zlg7289Init (zlg7289)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003B8 - 000003BB (0x4 bytes), align: 2
+  Segment part 16.            Intra module refs:   SysCtlPeripheralEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003BC - 000003C3 (0x8 bytes), align: 2
+  Segment part 42.            Intra module refs:   SysCtlClockSet
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysCtlDelay             000003BD 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000003C4 - 00000517 (0x154 bytes), align: 2
+  Segment part 43.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockSet          000003C5        main (main)
+               stack 1 = 00000000 ( 00000010 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000518 - 0000051B (0x4 bytes), align: 2
+  Segment part 44.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000051C - 0000051F (0x4 bytes), align: 2
+  Segment part 45.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000520 - 00000523 (0x4 bytes), align: 2
+  Segment part 46.            Intra module refs:   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000524 - 0000067B (0x158 bytes), align: 2
+  Segment part 47.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlClockGet          00000525        __delayNuS (zlg7289)
+                                                   irSendFreq (main)
+                                                   sysTickInit (main)
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000067C - 0000067F (0x4 bytes), align: 2
+  Segment part 48.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000680 - 00000683 (0x4 bytes), align: 2
+  Segment part 49.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlClockSet
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000684 - 00000695 (0x12 bytes), align: 2
+  Segment part 50.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysCtlPWMClockSet       00000685        sensorInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000698 - 0000069B (0x4 bytes), align: 2
+  Segment part 58.            Intra module refs:   SysCtlClockGet
+                                                   SysCtlPWMClockSet
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_systick
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 0000069C - 000006A9 (0xe bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickEnable           0000069D        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006AC - 000006B9 (0xe bytes), align: 2
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickIntEnable        000006AD        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006BC - 000006BF (0x4 bytes), align: 2
+  Segment part 8.             Intra module refs:   SysTickEnable
+                                                   SysTickIntEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006C0 - 000006C7 (0x8 bytes), align: 2
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTickPeriodSet        000006C1        sysTickInit (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006C8 - 000006CB (0x4 bytes), align: 2
+  Segment part 11.            Intra module refs:   SysTickPeriodSet
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : __lib_timer
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000006CC - 000006D7 (0xc bytes), align: 2
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerEnable             000006CD        stepMotorIint (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006D8 - 000006DB (0x4 bytes), align: 2
+  Segment part 4.             Intra module refs:   TimerEnable
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000006DC - 000006FF (0x24 bytes), align: 2
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerConfigure          000006DD        stepMotorIint (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000700 - 00000711 (0x12 bytes), align: 2
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerLoadSet            00000701        speedContrL (main)
+                                                   speedContrR (main)
+                                                   stepMotorIint (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000714 - 0000071B (0x8 bytes), align: 2
+  Segment part 26.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerIntEnable          00000715        stepMotorIint (main)
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000071C - 0000071F (0x4 bytes), align: 2
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TimerIntClear           0000071D        Timer0A_ISR (main)
+                                                   Timer1A_ISR (main)
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\高级实验\SearchMaze\Debug\Obj\main.r79
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_Z
+  Relative segment, address: 20000004 - 20000013 (0x10 bytes), align: 2
+  Segment part 2.             Intra module refs:   Segment part 21
+                                                   Segment part 31
+                                                   Segment part 32
+                                                   Segment part 33
+                                                   Segment part 34
+                                                   Segment part 55
+                                                   Segment part 62
+                                                   Segment part 63
+                                                   Segment part 67
+                                                   Segment part 71
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GmRight                 20000004 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 20000014 - 20000023 (0x10 bytes), align: 2
+  Segment part 3.             Intra module refs:   Segment part 23
+                                                   Segment part 42
+                                                   Segment part 43
+                                                   Segment part 44
+                                                   Segment part 45
+                                                   Segment part 56
+                                                   Segment part 64
+                                                   Segment part 65
+                                                   Segment part 66
+                                                   Segment part 70
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GmLeft                  20000014 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E4 - 200005E4 (0x1 bytes), align: 0
+  Segment part 4.             Intra module refs:   Segment part 37
+                                                   Segment part 61
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GucMouseState           200005E4 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 20000024 - 200004D3 (0x4b0 bytes), align: 2
+  Segment part 5.             Intra module refs:   Segment part 28
+                                                   Segment part 79
+                                                   stepMotorIint
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GuiAccelTable           20000024 
+    -------------------------------------------------------------------------
+DATA_I
+  Relative segment, address: 20000000 - 20000003 (0x4 bytes), align: 2
+  Segment part 6.             Intra module refs:   Segment part 27
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GiMaxSpeed              20000000 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200004D4 - 200004DB (0x8 bytes), align: 2
+  Segment part 8.             Intra module refs:   Segment part 38
+                                                   Segment part 39
+                                                   Segment part 40
+                                                   Segment part 41
+                                                   Segment part 48
+                                                   Segment part 49
+                                                   Segment part 53
+                                                   Segment part 54
+                                                   Segment part 57
+                                                   Segment part 85
+                                                   Segment part 86
+                                                   Segment part 87
+                                                   Segment part 88
+                                                   Segment part 89
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           GucDistance             200004D4 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000720 - 00000729 (0xa bytes), align: 2
+  Segment part 19.            Intra module refs:   keyCheck
+                                                   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delay                   00000721 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000072C - 000007EF (0xc4 bytes), align: 2
+  Segment part 20.            Intra module refs:   Timer0A_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           rightMotorContr         0000072D 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000007F0 - 000007F3 (0x4 bytes), align: 2
+  Segment part 21.            Intra module refs:   rightMotorContr
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E5 - 200005E5 (0x1 bytes), align: 0
+  Segment part 9.             Intra module refs:   rightMotorContr
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           rightMotorContr::cStep
+                                   200005E5 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000007F4 - 000008B7 (0xc4 bytes), align: 2
+  Segment part 22.            Intra module refs:   Timer1A_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           leftMotorContr          000007F5 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008B8 - 000008BB (0x4 bytes), align: 2
+  Segment part 23.            Intra module refs:   leftMotorContr
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008BC - 000008BF (0x4 bytes), align: 2
+  Segment part 24.            Intra module refs:   leftMotorContr
+                                                   rightMotorContr
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E6 - 200005E6 (0x1 bytes), align: 0
+  Segment part 10.            Intra module refs:   leftMotorContr
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           leftMotorContr::cStep   200005E6 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000008C0 - 00000925 (0x66 bytes), align: 2
+  Segment part 25.            Intra module refs:   Timer0A_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           speedContrR             000008C1 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000928 - 00000981 (0x5a bytes), align: 2
+  Segment part 26.            Intra module refs:   Timer1A_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           speedContrL             00000929 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000984 - 00000987 (0x4 bytes), align: 2
+  Segment part 27.            Intra module refs:   speedContrL
+                                                   speedContrR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000988 - 0000098B (0x4 bytes), align: 2
+  Segment part 28.            Intra module refs:   speedContrL
+                                                   speedContrR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000098C - 00000A9F (0x114 bytes), align: 2
+  Segment part 29.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer0A_ISR             0000098D        g_pfnVectors (startup)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AA0 - 00000AA3 (0x4 bytes), align: 2
+  Segment part 30.            Intra module refs:   Timer0A_ISR
+                                                   speedContrR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AA4 - 00000AA7 (0x4 bytes), align: 2
+  Segment part 31.            Intra module refs:   Timer0A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AA8 - 00000AAB (0x4 bytes), align: 2
+  Segment part 32.            Intra module refs:   Timer0A_ISR
+                                                   speedContrR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AAC - 00000AAF (0x4 bytes), align: 2
+  Segment part 33.            Intra module refs:   Timer0A_ISR
+                                                   speedContrR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AB0 - 00000AB3 (0x4 bytes), align: 2
+  Segment part 34.            Intra module refs:   Timer0A_ISR
+                                                   speedContrR
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E7 - 200005E7 (0x1 bytes), align: 0
+  Segment part 11.            Intra module refs:   Timer0A_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer0A_ISR::n          200005E7 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E8 - 200005E8 (0x1 bytes), align: 0
+  Segment part 12.            Intra module refs:   Timer0A_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer0A_ISR::m          200005E8 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000AB4 - 00000BC7 (0x114 bytes), align: 2
+  Segment part 35.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Timer1A_ISR             00000AB5        g_pfnVectors (startup)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BC8 - 00000BCB (0x4 bytes), align: 2
+  Segment part 36.            Intra module refs:   Timer1A_ISR
+                                                   speedContrL
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BCC - 00000BCF (0x4 bytes), align: 2
+  Segment part 37.            Intra module refs:   Timer0A_ISR
+                                                   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BD0 - 00000BD3 (0x4 bytes), align: 2
+  Segment part 38.            Intra module refs:   Timer0A_ISR
+                                                   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BD4 - 00000BD7 (0x4 bytes), align: 2
+  Segment part 39.            Intra module refs:   Timer0A_ISR
+                                                   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BD8 - 00000BDB (0x4 bytes), align: 2
+  Segment part 40.            Intra module refs:   Timer0A_ISR
+                                                   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BDC - 00000BDF (0x4 bytes), align: 2
+  Segment part 41.            Intra module refs:   Timer0A_ISR
+                                                   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BE0 - 00000BE3 (0x4 bytes), align: 2
+  Segment part 42.            Intra module refs:   Timer1A_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BE4 - 00000BE7 (0x4 bytes), align: 2
+  Segment part 43.            Intra module refs:   Timer1A_ISR
+                                                   speedContrL
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BE8 - 00000BEB (0x4 bytes), align: 2
+  Segment part 44.            Intra module refs:   Timer1A_ISR
+                                                   speedContrL
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BEC - 00000BEF (0x4 bytes), align: 2
+  Segment part 45.            Intra module refs:   Timer1A_ISR
+                                                   speedContrL
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005E9 - 200005E9 (0x1 bytes), align: 0
+  Segment part 13.            Intra module refs:   Timer1A_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer1A_ISR::n          200005E9 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005EA - 200005EA (0x1 bytes), align: 0
+  Segment part 14.            Intra module refs:   Timer1A_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           Timer1A_ISR::m          200005EA 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000BF0 - 00000C47 (0x58 bytes), align: 2
+  Segment part 46.            Intra module refs:   irCheck
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           irSendFreq              00000BF1 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000C48 - 00000DD7 (0x190 bytes), align: 2
+  Segment part 47.            Intra module refs:   SysTick_ISR
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           irCheck                 00000C49 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000DD8 - 00000DDB (0x4 bytes), align: 2
+  Segment part 48.            Intra module refs:   irCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000DDC - 00000DDF (0x4 bytes), align: 2
+  Segment part 49.            Intra module refs:   irCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000DE0 - 00000DE3 (0x4 bytes), align: 2
+  Segment part 50.            Intra module refs:   irCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000DE4 - 00000DE7 (0x4 bytes), align: 2
+  Segment part 51.            Intra module refs:   irCheck
+                                                   irSendFreq
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005EB - 200005EB (0x1 bytes), align: 0
+  Segment part 15.            Intra module refs:   irCheck
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           irCheck::ucState        200005EB 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200005EC - 200005EC (0x1 bytes), align: 0
+  Segment part 16.            Intra module refs:   irCheck
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           irCheck::ucIRCheck      200005EC 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000DE8 - 00000F13 (0x12c bytes), align: 2
+  Segment part 52.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mazeSearch              00000DE9 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F14 - 00000F17 (0x4 bytes), align: 2
+  Segment part 53.            Intra module refs:   irCheck
+                                                   mazeSearch
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F18 - 00000F1B (0x4 bytes), align: 2
+  Segment part 54.            Intra module refs:   irCheck
+                                                   mazeSearch
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F1C - 00000F1F (0x4 bytes), align: 2
+  Segment part 55.            Intra module refs:   mazeSearch
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F20 - 00000F23 (0x4 bytes), align: 2
+  Segment part 56.            Intra module refs:   mazeSearch
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F24 - 00000F27 (0x4 bytes), align: 2
+  Segment part 57.            Intra module refs:   irCheck
+                                                   mazeSearch
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F28 - 00000F7B (0x54 bytes), align: 2
+  Segment part 58.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mouseTurnright          00000F29 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000F7C - 00000FCF (0x54 bytes), align: 2
+  Segment part 59.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mouseTurnleft           00000F7D 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00000FD0 - 00001023 (0x54 bytes), align: 2
+  Segment part 60.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           mouseTurnback           00000FD1 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001024 - 00001027 (0x4 bytes), align: 2
+  Segment part 61.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001028 - 0000102B (0x4 bytes), align: 2
+  Segment part 62.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000102C - 0000102F (0x4 bytes), align: 2
+  Segment part 63.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001030 - 00001033 (0x4 bytes), align: 2
+  Segment part 64.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001034 - 00001037 (0x4 bytes), align: 2
+  Segment part 65.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001038 - 0000103B (0x4 bytes), align: 2
+  Segment part 66.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000103C - 0000103F (0x4 bytes), align: 2
+  Segment part 67.            Intra module refs:   mazeSearch
+                                                   mouseTurnback
+                                                   mouseTurnleft
+                                                   mouseTurnright
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001040 - 00001067 (0x28 bytes), align: 2
+  Segment part 68.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           keyCheck                00001041 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001068 - 000010D7 (0x70 bytes), align: 2
+  Segment part 69.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SysTick_ISR             00001069        g_pfnVectors (startup)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000010D8 - 000010DB (0x4 bytes), align: 2
+  Segment part 70.            Intra module refs:   SysTick_ISR
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000010DC - 000010DF (0x4 bytes), align: 2
+  Segment part 71.            Intra module refs:   SysTick_ISR
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200004DC - 200004DF (0x4 bytes), align: 2
+  Segment part 17.            Intra module refs:   SysTick_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysTick_ISR::iL         200004DC 
+    -------------------------------------------------------------------------
+DATA_Z
+  Relative segment, address: 200004E0 - 200004E3 (0x4 bytes), align: 2
+  Segment part 18.            Intra module refs:   SysTick_ISR
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           SysTick_ISR::iR         200004E0 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000010E0 - 0000111D (0x3e bytes), align: 2
+  Segment part 72.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           wallCheck               000010E1 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001120 - 00001187 (0x68 bytes), align: 2
+  Segment part 73.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sensorInit              00001121 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001188 - 0000118B (0x4 bytes), align: 2
+  Segment part 74.            Intra module refs:   sensorInit
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000118C - 0000118F (0x4 bytes), align: 2
+  Segment part 75.            Intra module refs:   sensorInit
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001190 - 00001287 (0xf8 bytes), align: 2
+  Segment part 76.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           stepMotorIint           00001191 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001288 - 0000128B (0x4 bytes), align: 2
+  Segment part 77.            Intra module refs:   SysTick_ISR
+                                                   stepMotorIint
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000128C - 0000128F (0x4 bytes), align: 2
+  Segment part 78.            Intra module refs:   stepMotorIint
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001290 - 00001293 (0x4 bytes), align: 2
+  Segment part 79.            Intra module refs:   stepMotorIint
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001294 - 00001297 (0x4 bytes), align: 2
+  Segment part 80.            Intra module refs:   stepMotorIint
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001298 - 000012A5 (0xe bytes), align: 2
+  Segment part 81.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           keyInit                 00001299 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000012A8 - 000012AB (0x4 bytes), align: 2
+  Segment part 82.            Intra module refs:   keyCheck
+                                                   keyInit
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000012AC - 000012C7 (0x1c bytes), align: 2
+  Segment part 83.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sysTickInit             000012AD 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000012C8 - 00001325 (0x5e bytes), align: 2
+  Segment part 84.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sensorDebug             000012C9 
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001328 - 0000132B (0x4 bytes), align: 2
+  Segment part 85.            Intra module refs:   sensorDebug
+                                                   wallCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000132C - 0000132F (0x4 bytes), align: 2
+  Segment part 86.            Intra module refs:   sensorDebug
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001330 - 00001333 (0x4 bytes), align: 2
+  Segment part 87.            Intra module refs:   sensorDebug
+                                                   wallCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001334 - 00001337 (0x4 bytes), align: 2
+  Segment part 88.            Intra module refs:   sensorDebug
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001338 - 0000133B (0x4 bytes), align: 2
+  Segment part 89.            Intra module refs:   sensorDebug
+                                                   wallCheck
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000133C - 000013EB (0xb0 bytes), align: 2
+  Segment part 90.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    0000133D        ResetISR (startup)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+DATA_ID
+  Relative segment, address: 000015E8 - 000015EB (0x4 bytes), align: 2
+  Segment part 7.             Intra module refs:   GiMaxSpeed
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: 000015D0 - 000015DB (0xc bytes), align: 2
+  Segment part 119. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_I        000015D0 
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: 000015DC - 000015E7 (0xc bytes), align: 2
+  Segment part 120. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?init?tab?DATA_Z        000015DC 
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\高级实验\SearchMaze\Debug\Obj\startup.r79
+  PROGRAM MODULE, NAME : startup
+
+  SEGMENTS IN THE MODULE
+  ======================
+DATA_Z
+  Relative segment, address: 200004E4 - 200005E3 (0x100 bytes), align: 2
+  Segment part 2.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           pulStack                200004E4 
+    -------------------------------------------------------------------------
+INTVEC
+  Relative segment, address: 00000000 - 000000EF (0xf0 bytes), align: 2
+  Segment part 3. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           g_pfnVectors            00000000 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000013EC - 0000142B (0x40 bytes), align: 2
+  Segment part 4.             Intra module refs:   g_pfnVectors
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ResetISR                000013ED        Absolute parts (?ABS_ENTRY_MOD)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000142C - 0000142D (0x2 bytes), align: 2
+  Segment part 5.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           NmiSR                   0000142D 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001430 - 00001431 (0x2 bytes), align: 2
+  Segment part 6.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           FaultISR                00001431 
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001434 - 00001435 (0x2 bytes), align: 2
+  Segment part 7.             Intra module refs:   g_pfnVectors
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IntDefaultHandler       00001435 
+
+    *************************************************************************
+
+  FILE NAME : F:\micromouse\MicroMouse615 cd\Demo\高级实验\SearchMaze\Debug\Obj\zlg7289.r79
+  PROGRAM MODULE, NAME : zlg7289
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 00001438 - 00001453 (0x1c bytes), align: 2
+  Segment part 3.             Intra module refs:   __zlg7289SPIWrite
+                                                   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __delayNuS              00001439 
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001454 - 000014BD (0x6a bytes), align: 2
+  Segment part 4.             Intra module refs:   zlg7289Cmd
+                                                   zlg7289CmdDat
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __zlg7289SPIWrite       00001455 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000014C0 - 000014EF (0x30 bytes), align: 2
+  Segment part 6.             Intra module refs:   zlg7289Init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Cmd              000014C1        main (main)
+               stack 1 = 00000000 ( 00000008 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 000014F0 - 00001531 (0x42 bytes), align: 2
+  Segment part 7.             Intra module refs:   zlg7289Download
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289CmdDat           000014F1 
+               stack 1 = 00000000 ( 0000000C )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 00001534 - 0000157B (0x48 bytes), align: 2
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Download         00001535        sensorDebug (main)
+               stack 1 = 00000000 ( 00000018 )
+    -------------------------------------------------------------------------
+CODE
+  Relative segment, address: 0000157C - 000015C3 (0x48 bytes), align: 2
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           zlg7289Init             0000157D        main (main)
+               stack 1 = 00000000 ( 00000004 )
+    -------------------------------------------------------------------------
+DATA_C
+  Relative segment, address: 00001638 - 0000163A (0x3 bytes), align: 0
+  Segment part 2.             Intra module refs:   zlg7289Download
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files\IAR Systems\Embedded Workbench 4.0 Kickstart\arm\LIB\dl7mptnnl8n.r79
+  LIBRARY MODULE, NAME : ?div_module
+
+  SEGMENTS IN THE MODULE
+  ======================
+CODE
+  Relative segment, address: 000015C4 - 000015CF (0xc bytes), align: 2
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ??div32_t               000015C5        Timer0A_ISR (main)
+                                                   Timer1A_ISR (main)
+                                                   irCheck (main)
+                                                   leftMotorContr (main)
+                                                   rightMotorContr (main)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC                             00000000 - 000000EF          F0   rel    2
+CODE                               000000F0 - 000015CF        14E0   rel    2
+INITTAB                            000015D0 - 000015E7          18   rel    2
+DATA_ID                            000015E8 - 000015EB           4   rel    2
+DATA_C                             000015EC - 0000163A          4F   rel    2
+DATA_I                             20000000 - 20000003           4   rel    2
+DATA_Z                             20000004 - 200005EC         5E9   rel    2
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 5 584 bytes of CODE  memory
+ 1 517 bytes of DATA  memory
+   107 bytes of CONST memory
+
+Errors: none
+Warnings: none
+

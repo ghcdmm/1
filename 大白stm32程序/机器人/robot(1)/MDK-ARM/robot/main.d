@@ -1,0 +1,36 @@
+robot\main.o: ../Src/main.c
+robot\main.o: ../Inc/main.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+robot\main.o: ../Inc/stm32f1xx_hal_conf.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+robot\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+robot\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+robot\main.o: ../Drivers/CMSIS/Include/core_cm3.h
+robot\main.o: D:\Program Files\keill\ARM\ARMCC\Bin\..\include\stdint.h
+robot\main.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+robot\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+robot\main.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+robot\main.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+robot\main.o: D:\Program Files\keill\ARM\ARMCC\Bin\..\include\stdio.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+robot\main.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+robot\main.o: ../Inc/dma.h
+robot\main.o: ../Inc/tim.h
+robot\main.o: ../Inc/usart.h
+robot\main.o: ../Inc/gpio.h
+robot\main.o: ../Src/../modules/scheduler/scheduler.h
+robot\main.o: ../Src/../modules/datalink/datalink.h
+robot\main.o: ../Src/../modules/encoder/encoder.h
+robot\main.o: ../Src/../modules/control_velocity/control_velocity.h
